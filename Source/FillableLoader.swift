@@ -20,8 +20,7 @@ class FillableLoader: UIView {
     
     // MARK: Public Variables
     
-    var duration: NSTimeInterval = 1.0
-    var fontSize: CGFloat = 14.0
+    var duration: NSTimeInterval = 10.0
     var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6 + 30
     var swing: Bool = true
     
@@ -182,7 +181,6 @@ class FillableLoader: UIView {
 
     internal func defaultValues() {
         duration = 10.0
-        fontSize = 14.0
         backgroundColor = UIColor.clearColor()
         loaderColor = UIColor(red: 0.41, green: 0.728, blue: 0.892, alpha: 1.0)
         loaderBackgroundColor = UIColor.whiteColor()
