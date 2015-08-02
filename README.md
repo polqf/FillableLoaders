@@ -1,22 +1,19 @@
 # PQFFillableLoaders
 
-####Collection of completely customizable loaders based in custom `CGPath`s
+####Collection of completely customizable loaders based in custom `CGPath`s written in Swift
 
 ![jul 26 2015 13 28](https://cloud.githubusercontent.com/assets/7887319/8893760/e4afff0e-339d-11e5-8a26-a483e77e79ac.gif)
 
-###Changelog
+###RoadMap
 
-- [ ] Polish last wave animation
-- [ ] Dealloc animations performance
-- [ ] Fit Loader inside fixed view
-- [ ] Progress based Loader
-- [ ] Pods support
-- [ ] Carthage support
+- Progress based Loader
+- Pods support
+- Carthage support
 
 
 ###Installation
-####• Carthage
 ####• CocoaPods
+####• Carthage
 
 ###Quick Start
 

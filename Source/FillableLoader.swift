@@ -22,7 +22,7 @@ class FillableLoader: UIView {
     
     var duration: NSTimeInterval = 1.0
     var fontSize: CGFloat = 14.0
-    var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6
+    var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6 + 30
     var swing: Bool = true
     
     
@@ -115,7 +115,7 @@ class FillableLoader: UIView {
         defaultValues()
         
         //Setting up loaderView
-        loaderView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, CGFloat(rectSize + 30))
+        loaderView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, rectSize)
         loaderView.center = CGPointMake(CGRectGetWidth(frame)/2, CGRectGetHeight(frame)/2)
         loaderView.layer.cornerRadius = cornerRadius
         
@@ -129,11 +129,12 @@ class FillableLoader: UIView {
     
     func addPath(thePath: CGPath) {
         let bounds = CGPathGetBoundingBox(thePath)
+        let center = bounds.origin
         let height = bounds.height
         let width = bounds.width
-        assert(height <= loaderView.frame.height, "The height of the path has to fit the dimensions (Height: \(loaderView.frame.height) Width: \(frame.width))")
-        assert(width <= loaderView.frame.height, "The width of the path has to fit the dimensions (Height: \(loaderView.frame.width) Width: \(frame.width))")
-        var transformation = CGAffineTransformMakeTranslation(-loaderView.center.x + loaderView.frame.width/2, -loaderView.center.y + loaderView.frame.height/2)
+        assert(height <= loaderView.frame.height, "The height(\(height)) of the path has to fit the dimensions (Height: \(loaderView.frame.height) Width: \(frame.width))")
+        assert(width <= loaderView.frame.height, "The width(\(width)) of the path has to fit the dimensions (Height: \(loaderView.frame.width) Width: \(frame.width))")
+        var transformation = CGAffineTransformMakeTranslation(-center.x - width/2 + loaderView.frame.width/2, -center.y - height/2 + loaderView.frame.height/2)
         path = CGPathCreateCopyByTransformingPath(thePath, &transformation)
     }
     

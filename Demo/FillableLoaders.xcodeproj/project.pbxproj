@@ -19,6 +19,7 @@
 		C17A2AFB1B6E961000BC845F /* SpikeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A2AF61B6E961000BC845F /* SpikeLoader.swift */; };
 		C17A2AFC1B6E961000BC845F /* WavesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A2AF71B6E961000BC845F /* WavesLoader.swift */; };
 		C17A2B001B6E9B5F00BC845F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C17A2AFF1B6E9B5F00BC845F /* bg.png */; };
+		C1981D091B6EAEEB00E289B9 /* DefaultPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1981D081B6EAEEB00E289B9 /* DefaultPaths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C17A2AF61B6E961000BC845F /* SpikeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = ../../Source/SpikeLoader.swift; sourceTree = "<group>"; };
 		C17A2AF71B6E961000BC845F /* WavesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = ../../Source/WavesLoader.swift; sourceTree = "<group>"; };
 		C17A2AFF1B6E9B5F00BC845F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C1981D081B6EAEEB00E289B9 /* DefaultPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPaths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				C17A2AF21B6E95E200BC845F /* FillableLoaders */,
 				C17A2AD21B6E953F00BC845F /* AppDelegate.swift */,
 				C17A2AD41B6E953F00BC845F /* ViewController.swift */,
+				C1981D081B6EAEEB00E289B9 /* DefaultPaths.swift */,
 				C17A2AD61B6E953F00BC845F /* Main.storyboard */,
 				C17A2ADB1B6E953F00BC845F /* LaunchScreen.xib */,
 				C17A2AFF1B6E9B5F00BC845F /* bg.png */,
@@ -242,6 +245,7 @@
 			files = (
 				C17A2AF81B6E961000BC845F /* FillableLoader.swift in Sources */,
 				C17A2AD51B6E953F00BC845F /* ViewController.swift in Sources */,
+				C1981D091B6EAEEB00E289B9 /* DefaultPaths.swift in Sources */,
 				C17A2AD31B6E953F00BC845F /* AppDelegate.swift in Sources */,
 				C17A2AF91B6E961000BC845F /* PlainLoader.swift in Sources */,
 				C17A2AFA1B6E961000BC845F /* RoundedLoader.swift in Sources */,
