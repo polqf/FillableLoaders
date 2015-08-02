@@ -150,6 +150,7 @@ class FillableLoader: UIView {
     func removeLoader() {
         hidden = false
         animate = false
+        removeFromSuperview()
     }
     
     internal func layoutPath() {
