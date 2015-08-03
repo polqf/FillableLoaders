@@ -38,7 +38,6 @@ Rounded
 
 ###RoadMap:
 
-- [ ] CocoaPods support
 - [ ] Carthage support
 - [ ] Progress based animations
 
@@ -105,6 +104,12 @@ Bool to indicate if the view has to swing when going up (small rotation, not ava
 
 ###Installation:
 ####• CocoaPods
+
+```
+use_frameworks!
+
+pod 'FillableLoaders', '~>0.0.2'
+```
 ####• Carthage
 
 ###How to create my own CGPath?
