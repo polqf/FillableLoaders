@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FillableLoader: UIView {
+public class FillableLoader: UIView {
     internal var shapeLayer = CAShapeLayer()
     internal var strokeLayer = CAShapeLayer()
     internal var path: CGPath!
@@ -35,7 +35,7 @@ class FillableLoader: UIView {
     internal var _loaderAlpha: CGFloat = 1.0
     internal var _cornerRadius: CGFloat = 0.0
     
-    override var backgroundColor: UIColor? {
+    override public var backgroundColor: UIColor? {
         get { return _backgroundColor }
         set {
             super.backgroundColor = mainBgColor
@@ -44,42 +44,42 @@ class FillableLoader: UIView {
             loaderView.layer.backgroundColor = newValue?.CGColor
         }
     }
-    var loaderColor: UIColor? {
+    public var loaderColor: UIColor? {
         get { return _loaderColor }
         set {
             _loaderColor = newValue
             shapeLayer.fillColor = newValue?.CGColor
         }
     }
-    var loaderBackgroundColor: UIColor? {
+    public var loaderBackgroundColor: UIColor? {
         get { return _loaderBackgroundColor }
         set {
             _loaderBackgroundColor = newValue
             strokeLayer.fillColor = newValue?.CGColor
         }
     }
-    var loaderStrokeColor: UIColor? {
+    public var loaderStrokeColor: UIColor? {
         get { return _loaderStrokeColor }
         set {
             _loaderStrokeColor = newValue
             strokeLayer.strokeColor = newValue?.CGColor
         }
     }
-    var loaderStrokeWidth: CGFloat {
+    public var loaderStrokeWidth: CGFloat {
         get { return _loaderStrokeWidth }
         set {
             _loaderStrokeWidth = newValue
             strokeLayer.lineWidth = newValue
         }
     }
-    var loaderAlpha: CGFloat {
+    public var loaderAlpha: CGFloat {
         get { return _loaderAlpha }
         set {
             _loaderAlpha = newValue
             loaderView.alpha = newValue
         }
     }
-    var cornerRadius: CGFloat {
+    public var cornerRadius: CGFloat {
         get { return _cornerRadius }
         set {
             _cornerRadius = newValue
@@ -90,13 +90,13 @@ class FillableLoader: UIView {
     
     // MARK: Initializers Methods
 
-    static func showLoaderWithPath(path: CGPath) -> Self {
+    public static func showLoaderWithPath(path: CGPath) -> Self {
         let loader = createLoaderWithPath(path: path)
         loader.showLoader()
         return loader
     }
     
-    static func createLoaderWithPath(path thePath: CGPath) -> Self {
+    public static func createLoaderWithPath(path thePath: CGPath) -> Self {
         var loader = self.init()
         loader.initialSetup()
         loader.addPath(thePath)
@@ -126,7 +126,7 @@ class FillableLoader: UIView {
         hidden = true
     }
     
-    func addPath(thePath: CGPath) {
+    internal func addPath(thePath: CGPath) {
         let bounds = CGPathGetBoundingBox(thePath)
         let center = bounds.origin
         let height = bounds.height
@@ -140,14 +140,14 @@ class FillableLoader: UIView {
     
     // MARK: Prepare Loader
     
-    func showLoader() {
+    public func showLoader() {
         hidden = false
         animate = true
         generateLoader()
         startAnimating()
     }
     
-    func removeLoader() {
+    public func removeLoader() {
         hidden = false
         animate = false
         removeFromSuperview()

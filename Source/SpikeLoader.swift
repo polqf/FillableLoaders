@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class SpikeLoader: FillableLoader {
-    var spikeHeight: CGFloat = 10.0
+public class SpikeLoader: FillableLoader {
+    public var spikeHeight: CGFloat = 10.0
     
     internal override func generateLoader() {
         extraHeight = spikeHeight
@@ -57,7 +57,7 @@ class SpikeLoader: FillableLoader {
     
     //MARK: Animations Delegate
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         if !animate { return }
         let key = anim.valueForKey("animation") as! String
         if key == "up" {

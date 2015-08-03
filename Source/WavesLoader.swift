@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WavesLoader: FillableLoader {
+public class WavesLoader: FillableLoader {
     
     internal override func generateLoader() {
         layoutPath()
@@ -98,7 +98,7 @@ class WavesLoader: FillableLoader {
     
     //MARK: Animations Delegate
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         if !animate { return }
         let key = anim.valueForKey("animation") as! String
         if key == "up" {

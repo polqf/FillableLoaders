@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class RoundedLoader: FillableLoader {
-    var spikeHeight: CGFloat = 5.0
+public class RoundedLoader: FillableLoader {
+    public var spikeHeight: CGFloat = 5.0
     
     internal override func generateLoader() {
         extraHeight = spikeHeight
@@ -63,7 +63,7 @@ class RoundedLoader: FillableLoader {
     
     //MARK: Animations Delegate
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         if !animate { return }
         let key = anim.valueForKey("animation") as! String
         if key == "up" {
