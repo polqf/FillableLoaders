@@ -40,6 +40,13 @@ Rounded
 <img src="Images/demo.png" height="300px"/>
 </p>
 
+###Changelog:
+
+- __1.0.0__ (7 Aug 2015)
+	- Progress based loaders :tada:
+	- Added documentation to all the public properties and functions
+- __0.0.2 Initial Release__ (3 Aug 2015)
+
 ###RoadMap:
 
 - [ ] Carthage support
@@ -64,7 +71,7 @@ If you want to create the loader, and not show it at the same moment, you can us
 
 Sample code:
 
-```
+``` swift
 		//PROGRESS BASED:
 		
 		var loader = WavesLoader.createProgressBasedLoaderWithPath(path)
@@ -89,7 +96,7 @@ Just call the method `removeLoader()` and the loader will disappear and will als
 
 Sample code:
 
-```
+``` swift
         loader.removeLoader()
 ```
 
@@ -135,7 +142,7 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>0.0.2'
+pod 'FillableLoaders', '~>1.0.0'
 ```
 ####• Carthage
 
@@ -147,7 +154,7 @@ pod 'FillableLoaders', '~>0.0.2'
 
 ####• Manually
 
-```
+``` swift
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, height/2)
         CGPathAddLineToPoint(path, nil, width + 100, height/2)
@@ -166,7 +173,7 @@ In this case we can use it to create BezierPaths, and extract from there the CGP
 
 In the case of drawing a star, it is going to give us this code:
 
-```
+``` swift
 //// Star Drawing
 var starPath = UIBezierPath()
 starPath.moveToPoint(CGPointMake(180, 25))
@@ -187,7 +194,7 @@ starPath.fill()
 
 The only thing we have to do here is extract the CGPath from the UIBezierPath like so:
 
-```
+``` swift
 let myPath = starPath.CGPath
 var myLoader = WavesLoader.showProgressBasedLoaderWithPath(myPath)
 ```
