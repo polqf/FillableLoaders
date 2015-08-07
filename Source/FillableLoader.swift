@@ -15,8 +15,8 @@ public class FillableLoader: UIView {
     internal var loaderView = UIView()
     internal var animate: Bool = false
     internal var extraHeight: CGFloat = 0
+    internal var oldYPoint: CGFloat = 0
     internal let mainBgColor = UIColor(white: 0.2, alpha: 0.6)
-    
     
     // MARK: Public Variables
     
@@ -26,8 +26,11 @@ public class FillableLoader: UIView {
     /// Loader background height (Default:  ScreenHeight/6 + 30)
     public var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6 + 30
     
-    /// Swing effect while going up (Default: true)
+    /// A Boolean value that determines whether the loader should have a swing effect while going up (Default: true)
     public var swing: Bool = true
+    
+    /// A Boolean value that determines whether the loader movement is progress based or not (Default: false)
+    public var progressBased: Bool = false
     
     
     // MARK: Custom Getters and Setters
@@ -39,6 +42,7 @@ public class FillableLoader: UIView {
     internal var _loaderStrokeWidth: CGFloat = 0.5
     internal var _loaderAlpha: CGFloat = 1.0
     internal var _cornerRadius: CGFloat = 0.0
+    internal var _progress: CGFloat = 0.0
     
     /// Loader view background color (Default: Clear)
     override public var backgroundColor: UIColor? {
@@ -104,6 +108,16 @@ public class FillableLoader: UIView {
             loaderView.layer.cornerRadius = newValue
         }
     }
+
+    /// Loader fill progress from 0.0 to 1.0 . It will automatically fire an animation to update the loader fill progress (Default: 0.0)
+    public var progress: CGFloat {
+        get { return _progress }
+        set {
+            if (!progressBased || newValue > 1.0 || newValue < 0.0) { return }
+            _progress = newValue
+            applyProgress()
+        }
+    }
     
     
     // MARK: Initializers Methods
@@ -120,9 +134,21 @@ public class FillableLoader: UIView {
         loader.showLoader()
         return loader
     }
+    /**
+    Creates and SHOWS a progress based loader with the given path
+    
+    :param: path Loader CGPath
+    
+    :returns: The loader that's already being showed
+    */
+    public static func showProgressBasedLoaderWithPath(path: CGPath) -> Self {
+        let loader = createProgressBasedLoaderWithPath(path: path)
+        loader.showLoader()
+        return loader
+    }
     
     /**
-    Creates a loder with the given path
+    Creates a loader with the given path
     
     :param: path Loader CGPath
     
@@ -130,6 +156,21 @@ public class FillableLoader: UIView {
     */
     public static func createLoaderWithPath(path thePath: CGPath) -> Self {
         var loader = self.init()
+        loader.initialSetup()
+        loader.addPath(thePath)
+        return loader
+    }
+    
+    /**
+    Creates a progress based loader with the given path
+    
+    :param: path Loader CGPath
+    
+    :returns: The created loader
+    */
+    public static func createProgressBasedLoaderWithPath(path thePath: CGPath) -> Self {
+        var loader = self.init()
+        loader.progressBased = true
         loader.initialSetup()
         loader.addPath(thePath)
         return loader
@@ -214,6 +255,8 @@ public class FillableLoader: UIView {
         shapeLayer.lineWidth = 0.2
         shapeLayer.strokeColor = UIColor.blackColor().CGColor
         shapeLayer.frame = loaderView.bounds
+        oldYPoint = rectSize + extraHeight
+        shapeLayer.position = CGPoint(x: shapeLayer.position.x, y: oldYPoint)
         
         loaderView.layer.addSublayer(baseLayer)
         baseLayer.addSublayer(shapeLayer)
@@ -234,26 +277,38 @@ public class FillableLoader: UIView {
     //MARK: Animations
     
     internal func startMoving(up: Bool) {
+        if (progressBased) { return }
         let key = up ? "up" : "down"
-        let animation2: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "position.y")
-        animation2.values = up ? [loaderView.frame.height/2 + rectSize/2, loaderView.frame.height/2 - rectSize/2 - extraHeight] : [loaderView.frame.height/2 - rectSize/2 - extraHeight, loaderView.frame.height/2 + rectSize/2]
-        animation2.duration = duration
-        animation2.removedOnCompletion = false
-        animation2.fillMode = kCAFillModeForwards
-        animation2.delegate = self
-        animation2.setValue(key, forKey: "animation")
-        shapeLayer.addAnimation(animation2, forKey: key)
+        let moveAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "position.y")
+        moveAnimation.values = up ? [loaderView.frame.height/2 + rectSize/2, loaderView.frame.height/2 - rectSize/2 - extraHeight] : [loaderView.frame.height/2 - rectSize/2 - extraHeight, loaderView.frame.height/2 + rectSize/2]
+        moveAnimation.duration = duration
+        moveAnimation.removedOnCompletion = false
+        moveAnimation.fillMode = kCAFillModeForwards
+        moveAnimation.delegate = self
+        moveAnimation.setValue(key, forKey: "animation")
+        shapeLayer.addAnimation(moveAnimation, forKey: key)
     }
     
+    internal func applyProgress() {
+        let yPoint = (rectSize + extraHeight)*(1-progress)
+        let progressAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "position.y")
+        progressAnimation.values = [oldYPoint, yPoint]
+        progressAnimation.duration = 0.2
+        progressAnimation.removedOnCompletion = false
+        progressAnimation.fillMode = kCAFillModeForwards
+        shapeLayer.addAnimation(progressAnimation, forKey: "progress")
+        oldYPoint = yPoint
+    }
+
     internal func startswinging() {
-        let animation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
-        animation.values = [0, randomAngle(), -randomAngle(), randomAngle(), -randomAngle(), randomAngle(), 0]
-        animation.duration = 12.0
-        animation.removedOnCompletion = false
-        animation.fillMode = kCAFillModeForwards
-        animation.delegate = self
-        animation.setValue("rotation", forKey: "animation")
-        shapeLayer.addAnimation(animation, forKey: "rotation")
+        let swingAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
+        swingAnimation.values = [0, randomAngle(), -randomAngle(), randomAngle(), -randomAngle(), randomAngle(), 0]
+        swingAnimation.duration = 12.0
+        swingAnimation.removedOnCompletion = false
+        swingAnimation.fillMode = kCAFillModeForwards
+        swingAnimation.delegate = self
+        swingAnimation.setValue("rotation", forKey: "animation")
+        shapeLayer.addAnimation(swingAnimation, forKey: "rotation")
     }
     
     internal func randomAngle() -> Double {

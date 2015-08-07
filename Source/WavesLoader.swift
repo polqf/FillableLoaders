@@ -31,14 +31,14 @@ public class WavesLoader: FillableLoader {
     }
     
     internal func startWaving() {
-        let animation2: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "path")
-        animation2.values = shapesArray(7)
-        animation2.duration = 2.0
-        animation2.removedOnCompletion = false
-        animation2.fillMode = kCAFillModeForwards
-        animation2.delegate = self
-        animation2.setValue("shape", forKey: "animation")
-        shapeLayer.addAnimation(animation2, forKey: "shape")
+        let waveAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "path")
+        waveAnimation.values = shapesArray(7)
+        waveAnimation.duration = 2.0
+        waveAnimation.removedOnCompletion = false
+        waveAnimation.fillMode = kCAFillModeForwards
+        waveAnimation.delegate = self
+        waveAnimation.setValue("shape", forKey: "animation")
+        shapeLayer.addAnimation(waveAnimation, forKey: "shape")
     }
     
     
