@@ -45,12 +45,12 @@ Rounded
 #### - Creation
 There are two main methods to create the loaders:
 
-`showLoaderWithPath:` and `createLoaderWithPath:`
+`showLoaderWithPath(path:)` and `createLoaderWithPath(path:)`
 
-`showLoaderWithPath:` is going to call the create one, and after it, is going to call the `showLoader` method.
+`showLoaderWithPath(path:)` is going to call the create one, and after it, is going to call the `showLoader()` method.
 So, it is just a helper method to do everything at once.
 
-If you want to create the loader, and not show it at the same moment, you can use `createLoaderWithPath:` to create it, and when you want to show it, just call `showLoader`
+If you want to create the loader, and not show it at the same moment, you can use `createLoaderWithPath(path:)` to create it, and when you want to show it, just call `showLoader()`
 
 Sample code:
 
@@ -64,7 +64,7 @@ Sample code:
 ```
 
 #### - Deletion:
-Just call the method `removeLoader` and the loader will disappear and will also be removed from its superview.
+Just call the method `removeLoader()` and the loader will disappear and will also be removed from its superview.
 
 Sample code:
 
