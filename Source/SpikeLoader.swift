@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 public class SpikeLoader: FillableLoader {
+    
+    /// Height of the spike
     public var spikeHeight: CGFloat = 10.0
     
     internal override func generateLoader() {

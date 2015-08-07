@@ -20,9 +20,14 @@ public class FillableLoader: UIView {
     
     // MARK: Public Variables
     
-    var duration: NSTimeInterval = 10.0
-    var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6 + 30
-    var swing: Bool = true
+    /// Duration of the animation (Default:  10.0)
+    public var duration: NSTimeInterval = 10.0
+    
+    /// Loader background height (Default:  ScreenHeight/6 + 30)
+    public var rectSize: CGFloat = UIScreen.mainScreen().bounds.height/6 + 30
+    
+    /// Swing effect while going up (Default: true)
+    public var swing: Bool = true
     
     
     // MARK: Custom Getters and Setters
@@ -35,6 +40,7 @@ public class FillableLoader: UIView {
     internal var _loaderAlpha: CGFloat = 1.0
     internal var _cornerRadius: CGFloat = 0.0
     
+    /// Loader view background color (Default: Clear)
     override public var backgroundColor: UIColor? {
         get { return _backgroundColor }
         set {
@@ -44,6 +50,8 @@ public class FillableLoader: UIView {
             loaderView.layer.backgroundColor = newValue?.CGColor
         }
     }
+    
+    /// Filled loader color (Default: Blue)
     public var loaderColor: UIColor? {
         get { return _loaderColor }
         set {
@@ -51,6 +59,8 @@ public class FillableLoader: UIView {
             shapeLayer.fillColor = newValue?.CGColor
         }
     }
+    
+    /// Unfilled loader color (Default: White)
     public var loaderBackgroundColor: UIColor? {
         get { return _loaderBackgroundColor }
         set {
@@ -58,6 +68,8 @@ public class FillableLoader: UIView {
             strokeLayer.fillColor = newValue?.CGColor
         }
     }
+    
+    /// Loader outline line color (Default: Black)
     public var loaderStrokeColor: UIColor? {
         get { return _loaderStrokeColor }
         set {
@@ -65,6 +77,8 @@ public class FillableLoader: UIView {
             strokeLayer.strokeColor = newValue?.CGColor
         }
     }
+    
+    /// Loader outline line width (Default: 0.5)
     public var loaderStrokeWidth: CGFloat {
         get { return _loaderStrokeWidth }
         set {
@@ -72,6 +86,8 @@ public class FillableLoader: UIView {
             strokeLayer.lineWidth = newValue
         }
     }
+    
+    /// Loader view alpha (Default: 1.0)
     public var loaderAlpha: CGFloat {
         get { return _loaderAlpha }
         set {
@@ -79,6 +95,8 @@ public class FillableLoader: UIView {
             loaderView.alpha = newValue
         }
     }
+    
+    /// Loader view corner radius (Default: 0.0)
     public var cornerRadius: CGFloat {
         get { return _cornerRadius }
         set {
@@ -90,12 +108,26 @@ public class FillableLoader: UIView {
     
     // MARK: Initializers Methods
 
+    /**
+    Creates and SHOWS a loader with the given path
+    
+    :param: path Loader CGPath
+    
+    :returns: The loader that's already being showed
+    */
     public static func showLoaderWithPath(path: CGPath) -> Self {
         let loader = createLoaderWithPath(path: path)
         loader.showLoader()
         return loader
     }
     
+    /**
+    Creates a loder with the given path
+    
+    :param: path Loader CGPath
+    
+    :returns: The created loader
+    */
     public static func createLoaderWithPath(path thePath: CGPath) -> Self {
         var loader = self.init()
         loader.initialSetup()
@@ -140,6 +172,11 @@ public class FillableLoader: UIView {
     
     // MARK: Prepare Loader
     
+    /**
+    Shows the loader.
+    
+    Atention: do not use this method after creating a loader with `showLoaderWithPath(path:)`
+    */
     public func showLoader() {
         hidden = false
         animate = true
@@ -147,6 +184,9 @@ public class FillableLoader: UIView {
         startAnimating()
     }
     
+    /**
+    Stops loader animations and removes it from its superview
+    */
     public func removeLoader() {
         hidden = false
         animate = false

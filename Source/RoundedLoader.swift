@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 public class RoundedLoader: FillableLoader {
+    
+    /// Height of the rounded edge of the spike
     public var spikeHeight: CGFloat = 5.0
     
     internal override func generateLoader() {
