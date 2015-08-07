@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "FillableLoaders"
-  s.version      = "0.0.2"
-  s.summary      = "Collection of completely customizable loaders based in custom CGPaths"
+  s.version      = "1.0.0"
+  s.summary      = "Collection of completely customizable progress based loaders drawn using custom CGPaths"
   s.homepage     = "https://github.com/poolqf/FillableLoaders"
   s.license      = 'MIT'
   s.author       = "Pol Quintana"
-  s.source       = { :git => "https://github.com/poolqf/FillableLoaders.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/poolqf/FillableLoaders.git", :tag => "1.0.0" }
   s.platform     = :ios, '8.0'
   s.source_files = 'Source'
   s.frameworks   = 'UIKit'

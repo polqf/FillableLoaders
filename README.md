@@ -1,6 +1,6 @@
 # PQFFillableLoaders
 
-####Collection of completely customizable progress based loaders based in custom `CGPath`s written in Swift
+####Collection of completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
 
 <p align="center">
 <img src="Images/waves.gif" height="120px"/>
