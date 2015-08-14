@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/language-swift-blue.svg)
+![](https://img.shields.io/badge/version-1.0.0-red.svg)
 # PQFFillableLoaders
 
 ####Collection of completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
