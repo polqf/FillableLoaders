@@ -40,7 +40,7 @@ public class SpikeLoader: FillableLoader {
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, height/2)
 
-        var widthDiff = width/32
+        let widthDiff = width/32
         var nextX = widthDiff
         var nextY = height/2 + spikeHeight
         
