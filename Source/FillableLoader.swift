@@ -155,7 +155,7 @@ public class FillableLoader: UIView {
     :returns: The created loader
     */
     public static func createLoaderWithPath(path thePath: CGPath) -> Self {
-        var loader = self.init()
+        let loader = self.init()
         loader.initialSetup()
         loader.addPath(thePath)
         return loader
@@ -169,7 +169,7 @@ public class FillableLoader: UIView {
     :returns: The created loader
     */
     public static func createProgressBasedLoaderWithPath(path thePath: CGPath) -> Self {
-        var loader = self.init()
+        let loader = self.init()
         loader.progressBased = true
         loader.initialSetup()
         loader.addPath(thePath)
@@ -235,7 +235,7 @@ public class FillableLoader: UIView {
     }
     
     internal func layoutPath() {
-        var maskingLayer = CAShapeLayer()
+        let maskingLayer = CAShapeLayer()
         maskingLayer.frame = loaderView.bounds
         maskingLayer.path = path
         
@@ -247,7 +247,7 @@ public class FillableLoader: UIView {
         strokeLayer.fillColor = loaderBackgroundColor?.CGColor
         loaderView.layer.addSublayer(strokeLayer)
         
-        var baseLayer = CAShapeLayer()
+        let baseLayer = CAShapeLayer()
         baseLayer.frame = loaderView.bounds
         baseLayer.mask = maskingLayer
         

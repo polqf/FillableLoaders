@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     func setupSubviews() {
-        var imageView = UIImageView(image: UIImage(named: "bg.png"))
+        let imageView = UIImageView(image: UIImage(named: "bg.png"))
         imageView.frame = view.frame
         view.addSubview(imageView)
         

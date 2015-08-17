@@ -12,7 +12,7 @@ import UIKit
 struct Paths {
     static func twitterPath() -> CGPath {
         //Created with PaintCode
-        var bezierPath = UIBezierPath()
+        let bezierPath = UIBezierPath()
         bezierPath.moveToPoint(CGPointMake(190, 281))
         bezierPath.addCurveToPoint(CGPointMake(142, 329), controlPoint1: CGPointMake(163.49, 281), controlPoint2: CGPointMake(142, 302.49))
         bezierPath.addCurveToPoint(CGPointMake(190, 377), controlPoint1: CGPointMake(142, 355.51), controlPoint2: CGPointMake(163.49, 377))
@@ -48,7 +48,7 @@ struct Paths {
     
     static func githubPath() -> CGPath {
         //Created with PaintCode
-        var bezierPath = UIBezierPath()
+        let bezierPath = UIBezierPath()
         bezierPath.moveToPoint(CGPointMake(114.86, 69.09))
         bezierPath.addCurveToPoint(CGPointMake(115.66, 59.2), controlPoint1: CGPointMake(115.31, 66.12), controlPoint2: CGPointMake(115.59, 62.86))
         bezierPath.addCurveToPoint(CGPointMake(107, 35.39), controlPoint1: CGPointMake(115.64, 43.53), controlPoint2: CGPointMake(108.4, 37.99))
