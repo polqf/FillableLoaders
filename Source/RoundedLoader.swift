@@ -43,11 +43,11 @@ public class RoundedLoader: FillableLoader {
         let waves = 32
         CGPathMoveToPoint(path, nil, 0, height/2)
         
-        var widthDiff = width/CGFloat(waves*2)
+        let widthDiff = width/CGFloat(waves*2)
         var nextCPX = widthDiff
         var nextCPY = height/2 + spikeHeight
         var nextX = nextCPX + widthDiff
-        var nextY = height/2
+        let nextY = height/2
         
         for i: Int in 1...waves {
             CGPathAddQuadCurveToPoint(path, nil, nextCPX, nextCPY, nextX, nextY)
