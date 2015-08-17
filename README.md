@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.0.0-red.svg)
+![](https://img.shields.io/badge/version-1.0.1-red.svg)
 # PQFFillableLoaders
 
-####Collection of completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
+####Completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
 
 <p align="center">
 <img src="Images/waves.gif" height="120px"/>
@@ -44,6 +44,8 @@ Rounded
 
 ###Changelog:
 
+- __1.0.1__ (17 Aug 2015)
+	- Removed unused code
 - __1.0.0__ (7 Aug 2015)
 	- Progress based loaders :tada:
 	- Added documentation to all the public properties and functions
@@ -144,7 +146,7 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>1.0.0'
+pod 'FillableLoaders', '~>1.0.1'
 ```
 ####• Carthage
 
