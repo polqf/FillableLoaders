@@ -31,8 +31,6 @@ public class PlainLoader: FillableLoader {
     internal func shapePath() -> CGMutablePath {
         let width = loaderView.frame.width
         let height = loaderView.frame.height
-        let divisions: CGFloat = 8
-        var variation: CGFloat = 10
         
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, height/2)
