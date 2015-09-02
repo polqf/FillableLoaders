@@ -1,5 +1,6 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.0.1-red.svg)
+![](https://img.shields.io/badge/version-1.1.0-red.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
 ####Completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
@@ -44,6 +45,9 @@ Rounded
 
 ###Changelog:
 
+- __1.1.0__ (2 Sep 2015)
+	- Added Carthage Support
+	- Added animation when hidding loader 
 - __1.0.1__ (17 Aug 2015)
 	- Removed unused code
 - __1.0.0__ (7 Aug 2015)
@@ -51,9 +55,6 @@ Rounded
 	- Added documentation to all the public properties and functions
 - __0.0.2 Initial Release__ (3 Aug 2015)
 
-###RoadMap:
-
-- [ ] Carthage support
 
 ###Quick Start:
 #### - Progress based behaviour
@@ -149,6 +150,10 @@ use_frameworks!
 pod 'FillableLoaders', '~>1.0.1'
 ```
 ####• Carthage
+
+```
+github "poolqf/FillableLoaders"
+```
 
 ###How to create my own CGPath?
 
