@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FillableLoaders.xcodeproj">
+      location = "self:FillableLoaders-Example.xcodeproj">
    </FileRef>
 </Workspace>
