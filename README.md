@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.1.0-red.svg)
+![](https://img.shields.io/badge/version-1.1.1-red.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
@@ -45,7 +45,7 @@ Rounded
 
 ###Changelog:
 
-- __1.1.0__ (2 Sep 2015)
+- __1.1.1__ (2 Sep 2015)
 	- Added Carthage Support
 	- Added animation when hidding loader 
 - __1.0.1__ (17 Aug 2015)
