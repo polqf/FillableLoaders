@@ -68,11 +68,11 @@
 		C1CF9DDD1B97843A00DEA2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1CF9DE61B9784B500DEA2EB /* DefaultPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPaths.swift; sourceTree = "<group>"; };
 		C1CF9DE81B9784C300DEA2EB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
-		C1CF9DEB1B9784EB00DEA2EB /* FillableLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FillableLoader.swift; path = "FillableLoaders-Example/FillableLoader.swift"; sourceTree = SOURCE_ROOT; };
-		C1CF9DEC1B9784EB00DEA2EB /* PlainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainLoader.swift; path = "FillableLoaders-Example/PlainLoader.swift"; sourceTree = SOURCE_ROOT; };
-		C1CF9DED1B9784EB00DEA2EB /* RoundedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedLoader.swift; path = "FillableLoaders-Example/RoundedLoader.swift"; sourceTree = SOURCE_ROOT; };
-		C1CF9DEE1B9784EB00DEA2EB /* SpikeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = "FillableLoaders-Example/SpikeLoader.swift"; sourceTree = SOURCE_ROOT; };
-		C1CF9DEF1B9784EB00DEA2EB /* WavesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = "FillableLoaders-Example/WavesLoader.swift"; sourceTree = SOURCE_ROOT; };
+		C1CF9DEB1B9784EB00DEA2EB /* FillableLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FillableLoader.swift; path = ../Source/FillableLoader.swift; sourceTree = SOURCE_ROOT; };
+		C1CF9DEC1B9784EB00DEA2EB /* PlainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainLoader.swift; path = ../Source/PlainLoader.swift; sourceTree = SOURCE_ROOT; };
+		C1CF9DED1B9784EB00DEA2EB /* RoundedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedLoader.swift; path = ../Source/RoundedLoader.swift; sourceTree = SOURCE_ROOT; };
+		C1CF9DEE1B9784EB00DEA2EB /* SpikeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = ../Source/SpikeLoader.swift; sourceTree = SOURCE_ROOT; };
+		C1CF9DEF1B9784EB00DEA2EB /* WavesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = ../Source/WavesLoader.swift; sourceTree = SOURCE_ROOT; };
 		C1CF9DF61B97852300DEA2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FillableLoaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CF9DFF1B97857600DEA2EB /* FillableLoaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillableLoaders.h; sourceTree = "<group>"; };
@@ -571,6 +571,7 @@
 				C1CF9E071B97857600DEA2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
