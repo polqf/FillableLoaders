@@ -1,15 +1,15 @@
 //
-//  FillableLoadersTests.swift
-//  FillableLoadersTests
+//  FillableLoaders_ExampleTests.swift
+//  FillableLoaders-ExampleTests
 //
-//  Created by Pol Quintana on 2/8/15.
-//  Copyright (c) 2015 Pol Quintana. All rights reserved.
+//  Created by Pol Quintana on 2/9/15.
+//  Copyright © 2015 Pol Quintana. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import FillableLoaders_Example
 
-class FillableLoadersTests: XCTestCase {
+class FillableLoaders_ExampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,12 @@ class FillableLoadersTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
