@@ -229,9 +229,16 @@ public class FillableLoader: UIView {
     Stops loader animations and removes it from its superview
     */
     public func removeLoader() {
-        hidden = false
-        animate = false
-        removeFromSuperview()
+        UIView.animateKeyframesWithDuration(0.2,
+            delay: 0,
+            options: .BeginFromCurrentState,
+            animations: {
+                self.alpha = 0.0
+            }) { _ in
+                self.hidden = false
+                self.animate = false
+                self.removeFromSuperview()
+        }
     }
     
     internal func layoutPath() {
