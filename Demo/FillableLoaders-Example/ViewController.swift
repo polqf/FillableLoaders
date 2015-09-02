@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FillableLoaders
 
 class ViewController: UIViewController {
     

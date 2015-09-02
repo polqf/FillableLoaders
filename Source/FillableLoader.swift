@@ -228,7 +228,7 @@ public class FillableLoader: UIView {
     /**
     Stops loader animations and removes it from its superview
     */
-    public func removeLoader(animated animated: Bool = true) {
+    public func removeLoader(animated: Bool = true) {
         let completion: () -> () = {
             self.hidden = false
             self.animate = false
