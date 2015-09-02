@@ -7,49 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1CF9DC71B97843A00DEA2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DC61B97843A00DEA2EB /* AppDelegate.swift */; };
-		C1CF9DC91B97843A00DEA2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DC81B97843A00DEA2EB /* ViewController.swift */; };
-		C1CF9DCC1B97843A00DEA2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CF9DCA1B97843A00DEA2EB /* Main.storyboard */; };
-		C1CF9DCE1B97843A00DEA2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CF9DCD1B97843A00DEA2EB /* Assets.xcassets */; };
-		C1CF9DDC1B97843A00DEA2EB /* FillableLoaders_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DDB1B97843A00DEA2EB /* FillableLoaders_ExampleTests.swift */; };
-		C1CF9DE71B9784B500DEA2EB /* DefaultPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DE61B9784B500DEA2EB /* DefaultPaths.swift */; };
-		C1CF9DE91B9784C300DEA2EB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CF9DE81B9784C300DEA2EB /* bg.png */; };
-		C1CF9DF01B9784EB00DEA2EB /* FillableLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DEB1B9784EB00DEA2EB /* FillableLoader.swift */; };
-		C1CF9DF11B9784EB00DEA2EB /* PlainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DEC1B9784EB00DEA2EB /* PlainLoader.swift */; };
-		C1CF9DF21B9784EB00DEA2EB /* RoundedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DED1B9784EB00DEA2EB /* RoundedLoader.swift */; };
-		C1CF9DF31B9784EB00DEA2EB /* SpikeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DEE1B9784EB00DEA2EB /* SpikeLoader.swift */; };
-		C1CF9DF41B9784EB00DEA2EB /* WavesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9DEF1B9784EB00DEA2EB /* WavesLoader.swift */; };
-		C1CF9DF71B97852300DEA2EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CF9DF51B97852300DEA2EB /* LaunchScreen.xib */; };
-		C1CF9E001B97857600DEA2EB /* FillableLoaders.h in Headers */ = {isa = PBXBuildFile; fileRef = C1CF9DFF1B97857600DEA2EB /* FillableLoaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1CF9E041B97857600DEA2EB /* FillableLoaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */; };
-		C1CF9E051B97857600DEA2EB /* FillableLoaders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17B58D11B97906A00717546 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C17B58CF1B97906A00717546 /* bg.png */; };
+		C17B58D21B97906A00717546 /* DefaultPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B58D01B97906A00717546 /* DefaultPaths.swift */; };
+		C17B59021B9790A800717546 /* FillableLoaders.h in Headers */ = {isa = PBXBuildFile; fileRef = C17B59011B9790A800717546 /* FillableLoaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17B59141B9790A800717546 /* FillableLoaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B58FD1B9790A800717546 /* FillableLoaders.framework */; };
+		C17B59211B9790CD00717546 /* FillableLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B591C1B9790CD00717546 /* FillableLoader.swift */; };
+		C17B59221B9790CD00717546 /* PlainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B591D1B9790CD00717546 /* PlainLoader.swift */; };
+		C17B59231B9790CD00717546 /* RoundedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B591E1B9790CD00717546 /* RoundedLoader.swift */; };
+		C17B59241B9790CD00717546 /* SpikeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B591F1B9790CD00717546 /* SpikeLoader.swift */; };
+		C17B59251B9790CD00717546 /* WavesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B59201B9790CD00717546 /* WavesLoader.swift */; };
+		C17B59261B97913C00717546 /* FillableLoaders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B58FD1B9790A800717546 /* FillableLoaders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1C748991B978FA5001948ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C748981B978FA5001948ED /* AppDelegate.swift */; };
+		C1C7489B1B978FA5001948ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7489A1B978FA5001948ED /* ViewController.swift */; };
+		C1C7489E1B978FA5001948ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C7489C1B978FA5001948ED /* Main.storyboard */; };
+		C1C748A01B978FA5001948ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C7489F1B978FA5001948ED /* Images.xcassets */; };
+		C1C748A31B978FA5001948ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1C748A11B978FA5001948ED /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C1CF9DD81B97843A00DEA2EB /* PBXContainerItemProxy */ = {
+		C17B59121B9790A800717546 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C1CF9DBB1B97843A00DEA2EB /* Project object */;
+			containerPortal = C1C7488B1B978FA5001948ED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C1CF9DC21B97843A00DEA2EB;
-			remoteInfo = "FillableLoaders-Example";
-		};
-		C1CF9E021B97857600DEA2EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C1CF9DBB1B97843A00DEA2EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C1CF9DFC1B97857600DEA2EB;
+			remoteGlobalIDString = C17B58FC1B9790A800717546;
 			remoteInfo = FillableLoaders;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C1CF9E091B97857600DEA2EB /* Embed Frameworks */ = {
+		C17B58F41B97908000717546 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C1CF9E051B97857600DEA2EB /* FillableLoaders.framework in Embed Frameworks */,
+				C17B59261B97913C00717546 /* FillableLoaders.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,171 +49,129 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C1CF9DC31B97843A00DEA2EB /* FillableLoaders-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FillableLoaders-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1CF9DC61B97843A00DEA2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1CF9DC81B97843A00DEA2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C1CF9DCB1B97843A00DEA2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C1CF9DCD1B97843A00DEA2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1CF9DD21B97843A00DEA2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1CF9DD71B97843A00DEA2EB /* FillableLoaders-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FillableLoaders-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1CF9DDB1B97843A00DEA2EB /* FillableLoaders_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillableLoaders_ExampleTests.swift; sourceTree = "<group>"; };
-		C1CF9DDD1B97843A00DEA2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1CF9DE61B9784B500DEA2EB /* DefaultPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPaths.swift; sourceTree = "<group>"; };
-		C1CF9DE81B9784C300DEA2EB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
-		C1CF9DEB1B9784EB00DEA2EB /* FillableLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FillableLoader.swift; path = ../Source/FillableLoader.swift; sourceTree = SOURCE_ROOT; };
-		C1CF9DEC1B9784EB00DEA2EB /* PlainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainLoader.swift; path = ../Source/PlainLoader.swift; sourceTree = SOURCE_ROOT; };
-		C1CF9DED1B9784EB00DEA2EB /* RoundedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedLoader.swift; path = ../Source/RoundedLoader.swift; sourceTree = SOURCE_ROOT; };
-		C1CF9DEE1B9784EB00DEA2EB /* SpikeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = ../Source/SpikeLoader.swift; sourceTree = SOURCE_ROOT; };
-		C1CF9DEF1B9784EB00DEA2EB /* WavesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = ../Source/WavesLoader.swift; sourceTree = SOURCE_ROOT; };
-		C1CF9DF61B97852300DEA2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FillableLoaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1CF9DFF1B97857600DEA2EB /* FillableLoaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillableLoaders.h; sourceTree = "<group>"; };
-		C1CF9E011B97857600DEA2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17B58CF1B97906A00717546 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C17B58D01B97906A00717546 /* DefaultPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPaths.swift; sourceTree = "<group>"; };
+		C17B58FD1B9790A800717546 /* FillableLoaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FillableLoaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17B59001B9790A800717546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17B59011B9790A800717546 /* FillableLoaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillableLoaders.h; sourceTree = "<group>"; };
+		C17B591C1B9790CD00717546 /* FillableLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FillableLoader.swift; path = ../../Source/FillableLoader.swift; sourceTree = "<group>"; };
+		C17B591D1B9790CD00717546 /* PlainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainLoader.swift; path = ../../Source/PlainLoader.swift; sourceTree = "<group>"; };
+		C17B591E1B9790CD00717546 /* RoundedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedLoader.swift; path = ../../Source/RoundedLoader.swift; sourceTree = "<group>"; };
+		C17B591F1B9790CD00717546 /* SpikeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = ../../Source/SpikeLoader.swift; sourceTree = "<group>"; };
+		C17B59201B9790CD00717546 /* WavesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = ../../Source/WavesLoader.swift; sourceTree = "<group>"; };
+		C1C748931B978FA5001948ED /* FillableLoaders-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FillableLoaders-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C748971B978FA5001948ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C748981B978FA5001948ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1C7489A1B978FA5001948ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1C7489D1B978FA5001948ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1C7489F1B978FA5001948ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1C748A21B978FA5001948ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C1CF9DC01B97843A00DEA2EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1CF9E041B97857600DEA2EB /* FillableLoaders.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1CF9DD41B97843A00DEA2EB /* Frameworks */ = {
+		C17B58F91B9790A800717546 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1CF9DF91B97857600DEA2EB /* Frameworks */ = {
+		C1C748901B978FA5001948ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17B59141B9790A800717546 /* FillableLoaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C1CF9DBA1B97843A00DEA2EB = {
+		C17B58FE1B9790A800717546 /* FillableLoaders */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF9DC51B97843A00DEA2EB /* FillableLoaders-Example */,
-				C1CF9DDA1B97843A00DEA2EB /* FillableLoaders-ExampleTests */,
-				C1CF9DFE1B97857600DEA2EB /* FillableLoaders */,
-				C1CF9DC41B97843A00DEA2EB /* Products */,
+				C17B59011B9790A800717546 /* FillableLoaders.h */,
+				C17B591C1B9790CD00717546 /* FillableLoader.swift */,
+				C17B591D1B9790CD00717546 /* PlainLoader.swift */,
+				C17B591E1B9790CD00717546 /* RoundedLoader.swift */,
+				C17B591F1B9790CD00717546 /* SpikeLoader.swift */,
+				C17B59201B9790CD00717546 /* WavesLoader.swift */,
+				C17B58FF1B9790A800717546 /* Supporting Files */,
+			);
+			path = FillableLoaders;
+			sourceTree = "<group>";
+		};
+		C17B58FF1B9790A800717546 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C17B59001B9790A800717546 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1C7488A1B978FA5001948ED = {
+			isa = PBXGroup;
+			children = (
+				C1C748951B978FA5001948ED /* FillableLoaders-Example */,
+				C17B58FE1B9790A800717546 /* FillableLoaders */,
+				C1C748941B978FA5001948ED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C1CF9DC41B97843A00DEA2EB /* Products */ = {
+		C1C748941B978FA5001948ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF9DC31B97843A00DEA2EB /* FillableLoaders-Example.app */,
-				C1CF9DD71B97843A00DEA2EB /* FillableLoaders-ExampleTests.xctest */,
-				C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */,
+				C1C748931B978FA5001948ED /* FillableLoaders-Example.app */,
+				C17B58FD1B9790A800717546 /* FillableLoaders.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1CF9DC51B97843A00DEA2EB /* FillableLoaders-Example */ = {
+		C1C748951B978FA5001948ED /* FillableLoaders-Example */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF9DC61B97843A00DEA2EB /* AppDelegate.swift */,
-				C1CF9DC81B97843A00DEA2EB /* ViewController.swift */,
-				C1CF9DE61B9784B500DEA2EB /* DefaultPaths.swift */,
-				C1CF9DE81B9784C300DEA2EB /* bg.png */,
-				C1CF9DCA1B97843A00DEA2EB /* Main.storyboard */,
-				C1CF9DF51B97852300DEA2EB /* LaunchScreen.xib */,
-				C1CF9DCD1B97843A00DEA2EB /* Assets.xcassets */,
-				C1CF9DD21B97843A00DEA2EB /* Info.plist */,
+				C1C748981B978FA5001948ED /* AppDelegate.swift */,
+				C1C7489A1B978FA5001948ED /* ViewController.swift */,
+				C17B58D01B97906A00717546 /* DefaultPaths.swift */,
+				C17B58CF1B97906A00717546 /* bg.png */,
+				C1C7489C1B978FA5001948ED /* Main.storyboard */,
+				C1C7489F1B978FA5001948ED /* Images.xcassets */,
+				C1C748A11B978FA5001948ED /* LaunchScreen.xib */,
+				C1C748961B978FA5001948ED /* Supporting Files */,
 			);
 			path = "FillableLoaders-Example";
 			sourceTree = "<group>";
 		};
-		C1CF9DDA1B97843A00DEA2EB /* FillableLoaders-ExampleTests */ = {
+		C1C748961B978FA5001948ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1CF9DDB1B97843A00DEA2EB /* FillableLoaders_ExampleTests.swift */,
-				C1CF9DDD1B97843A00DEA2EB /* Info.plist */,
+				C1C748971B978FA5001948ED /* Info.plist */,
 			);
-			path = "FillableLoaders-ExampleTests";
-			sourceTree = "<group>";
-		};
-		C1CF9DFE1B97857600DEA2EB /* FillableLoaders */ = {
-			isa = PBXGroup;
-			children = (
-				C1CF9DFF1B97857600DEA2EB /* FillableLoaders.h */,
-				C1CF9DEB1B9784EB00DEA2EB /* FillableLoader.swift */,
-				C1CF9DEC1B9784EB00DEA2EB /* PlainLoader.swift */,
-				C1CF9DED1B9784EB00DEA2EB /* RoundedLoader.swift */,
-				C1CF9DEE1B9784EB00DEA2EB /* SpikeLoader.swift */,
-				C1CF9DEF1B9784EB00DEA2EB /* WavesLoader.swift */,
-				C1CF9E011B97857600DEA2EB /* Info.plist */,
-			);
-			path = FillableLoaders;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C1CF9DFA1B97857600DEA2EB /* Headers */ = {
+		C17B58FA1B9790A800717546 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CF9E001B97857600DEA2EB /* FillableLoaders.h in Headers */,
+				C17B59021B9790A800717546 /* FillableLoaders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C1CF9DC21B97843A00DEA2EB /* FillableLoaders-Example */ = {
+		C17B58FC1B9790A800717546 /* FillableLoaders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1CF9DE01B97843A00DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders-Example" */;
+			buildConfigurationList = C17B59161B9790A800717546 /* Build configuration list for PBXNativeTarget "FillableLoaders" */;
 			buildPhases = (
-				C1CF9DBF1B97843A00DEA2EB /* Sources */,
-				C1CF9DC01B97843A00DEA2EB /* Frameworks */,
-				C1CF9DC11B97843A00DEA2EB /* Resources */,
-				C1CF9E091B97857600DEA2EB /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C1CF9E031B97857600DEA2EB /* PBXTargetDependency */,
-			);
-			name = "FillableLoaders-Example";
-			productName = "FillableLoaders-Example";
-			productReference = C1CF9DC31B97843A00DEA2EB /* FillableLoaders-Example.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C1CF9DD61B97843A00DEA2EB /* FillableLoaders-ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C1CF9DE31B97843A00DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders-ExampleTests" */;
-			buildPhases = (
-				C1CF9DD31B97843A00DEA2EB /* Sources */,
-				C1CF9DD41B97843A00DEA2EB /* Frameworks */,
-				C1CF9DD51B97843A00DEA2EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C1CF9DD91B97843A00DEA2EB /* PBXTargetDependency */,
-			);
-			name = "FillableLoaders-ExampleTests";
-			productName = "FillableLoaders-ExampleTests";
-			productReference = C1CF9DD71B97843A00DEA2EB /* FillableLoaders-ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C1CF9DFC1B97857600DEA2EB /* FillableLoaders */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C1CF9E081B97857600DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders" */;
-			buildPhases = (
-				C1CF9DF81B97857600DEA2EB /* Sources */,
-				C1CF9DF91B97857600DEA2EB /* Frameworks */,
-				C1CF9DFA1B97857600DEA2EB /* Headers */,
-				C1CF9DFB1B97857600DEA2EB /* Resources */,
+				C17B58F81B9790A800717546 /* Sources */,
+				C17B58F91B9790A800717546 /* Frameworks */,
+				C17B58FA1B9790A800717546 /* Headers */,
+				C17B58FB1B9790A800717546 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -229,31 +179,46 @@
 			);
 			name = FillableLoaders;
 			productName = FillableLoaders;
-			productReference = C1CF9DFD1B97857600DEA2EB /* FillableLoaders.framework */;
+			productReference = C17B58FD1B9790A800717546 /* FillableLoaders.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		C1C748921B978FA5001948ED /* FillableLoaders-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C748B21B978FA5001948ED /* Build configuration list for PBXNativeTarget "FillableLoaders-Example" */;
+			buildPhases = (
+				C1C7488F1B978FA5001948ED /* Sources */,
+				C1C748901B978FA5001948ED /* Frameworks */,
+				C1C748911B978FA5001948ED /* Resources */,
+				C17B58F41B97908000717546 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C17B59131B9790A800717546 /* PBXTargetDependency */,
+			);
+			name = "FillableLoaders-Example";
+			productName = "FillableLoaders-Example";
+			productReference = C1C748931B978FA5001948ED /* FillableLoaders-Example.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C1CF9DBB1B97843A00DEA2EB /* Project object */ = {
+		C1C7488B1B978FA5001948ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Pol Quintana";
 				TargetAttributes = {
-					C1CF9DC21B97843A00DEA2EB = {
-						CreatedOnToolsVersion = 7.0;
+					C17B58FC1B9790A800717546 = {
+						CreatedOnToolsVersion = 6.4;
 					};
-					C1CF9DD61B97843A00DEA2EB = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = C1CF9DC21B97843A00DEA2EB;
-					};
-					C1CF9DFC1B97857600DEA2EB = {
-						CreatedOnToolsVersion = 7.0;
+					C1C748921B978FA5001948ED = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = C1CF9DBE1B97843A00DEA2EB /* Build configuration list for PBXProject "FillableLoaders-Example" */;
+			buildConfigurationList = C1C7488E1B978FA5001948ED /* Build configuration list for PBXProject "FillableLoaders-Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,105 +226,84 @@
 				en,
 				Base,
 			);
-			mainGroup = C1CF9DBA1B97843A00DEA2EB;
-			productRefGroup = C1CF9DC41B97843A00DEA2EB /* Products */;
+			mainGroup = C1C7488A1B978FA5001948ED;
+			productRefGroup = C1C748941B978FA5001948ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1CF9DC21B97843A00DEA2EB /* FillableLoaders-Example */,
-				C1CF9DD61B97843A00DEA2EB /* FillableLoaders-ExampleTests */,
-				C1CF9DFC1B97857600DEA2EB /* FillableLoaders */,
+				C1C748921B978FA5001948ED /* FillableLoaders-Example */,
+				C17B58FC1B9790A800717546 /* FillableLoaders */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C1CF9DC11B97843A00DEA2EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1CF9DF71B97852300DEA2EB /* LaunchScreen.xib in Resources */,
-				C1CF9DCE1B97843A00DEA2EB /* Assets.xcassets in Resources */,
-				C1CF9DE91B9784C300DEA2EB /* bg.png in Resources */,
-				C1CF9DCC1B97843A00DEA2EB /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1CF9DD51B97843A00DEA2EB /* Resources */ = {
+		C17B58FB1B9790A800717546 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1CF9DFB1B97857600DEA2EB /* Resources */ = {
+		C1C748911B978FA5001948ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C7489E1B978FA5001948ED /* Main.storyboard in Resources */,
+				C1C748A31B978FA5001948ED /* LaunchScreen.xib in Resources */,
+				C17B58D11B97906A00717546 /* bg.png in Resources */,
+				C1C748A01B978FA5001948ED /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C1CF9DBF1B97843A00DEA2EB /* Sources */ = {
+		C17B58F81B9790A800717546 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CF9DF21B9784EB00DEA2EB /* RoundedLoader.swift in Sources */,
-				C1CF9DF41B9784EB00DEA2EB /* WavesLoader.swift in Sources */,
-				C1CF9DF31B9784EB00DEA2EB /* SpikeLoader.swift in Sources */,
-				C1CF9DE71B9784B500DEA2EB /* DefaultPaths.swift in Sources */,
-				C1CF9DF01B9784EB00DEA2EB /* FillableLoader.swift in Sources */,
-				C1CF9DC91B97843A00DEA2EB /* ViewController.swift in Sources */,
-				C1CF9DC71B97843A00DEA2EB /* AppDelegate.swift in Sources */,
-				C1CF9DF11B9784EB00DEA2EB /* PlainLoader.swift in Sources */,
+				C17B59231B9790CD00717546 /* RoundedLoader.swift in Sources */,
+				C17B59211B9790CD00717546 /* FillableLoader.swift in Sources */,
+				C17B59221B9790CD00717546 /* PlainLoader.swift in Sources */,
+				C17B59241B9790CD00717546 /* SpikeLoader.swift in Sources */,
+				C17B59251B9790CD00717546 /* WavesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1CF9DD31B97843A00DEA2EB /* Sources */ = {
+		C1C7488F1B978FA5001948ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CF9DDC1B97843A00DEA2EB /* FillableLoaders_ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1CF9DF81B97857600DEA2EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C17B58D21B97906A00717546 /* DefaultPaths.swift in Sources */,
+				C1C7489B1B978FA5001948ED /* ViewController.swift in Sources */,
+				C1C748991B978FA5001948ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C1CF9DD91B97843A00DEA2EB /* PBXTargetDependency */ = {
+		C17B59131B9790A800717546 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C1CF9DC21B97843A00DEA2EB /* FillableLoaders-Example */;
-			targetProxy = C1CF9DD81B97843A00DEA2EB /* PBXContainerItemProxy */;
-		};
-		C1CF9E031B97857600DEA2EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C1CF9DFC1B97857600DEA2EB /* FillableLoaders */;
-			targetProxy = C1CF9E021B97857600DEA2EB /* PBXContainerItemProxy */;
+			target = C17B58FC1B9790A800717546 /* FillableLoaders */;
+			targetProxy = C17B59121B9790A800717546 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C1CF9DCA1B97843A00DEA2EB /* Main.storyboard */ = {
+		C1C7489C1B978FA5001948ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C1CF9DCB1B97843A00DEA2EB /* Base */,
+				C1C7489D1B978FA5001948ED /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C1CF9DF51B97852300DEA2EB /* LaunchScreen.xib */ = {
+		C1C748A11B978FA5001948ED /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C1CF9DF61B97852300DEA2EB /* Base */,
+				C1C748A21B978FA5001948ED /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -367,7 +311,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C1CF9DDE1B97843A00DEA2EB /* Debug */ = {
+		C17B59171B9790A800717546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FillableLoaders/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C17B59181B9790A800717546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FillableLoaders/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1C748B01B978FA5001948ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -386,9 +373,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -397,13 +383,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +399,7 @@
 			};
 			name = Debug;
 		};
-		C1CF9DDF1B97843A00DEA2EB /* Release */ = {
+		C1C748B11B978FA5001948ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,130 +437,56 @@
 			};
 			name = Release;
 		};
-		C1CF9DE11B97843A00DEA2EB /* Debug */ = {
+		C1C748B31B978FA5001948ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "FillableLoaders-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polquintana.FillableLoaders-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C1CF9DE21B97843A00DEA2EB /* Release */ = {
+		C1C748B41B978FA5001948ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "FillableLoaders-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polquintana.FillableLoaders-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C1CF9DE41B97843A00DEA2EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "FillableLoaders-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polquintana.FillableLoaders-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FillableLoaders-Example.app/FillableLoaders-Example";
-			};
-			name = Debug;
-		};
-		C1CF9DE51B97843A00DEA2EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "FillableLoaders-ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polquintana.FillableLoaders-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FillableLoaders-Example.app/FillableLoaders-Example";
-			};
-			name = Release;
-		};
-		C1CF9E061B97857600DEA2EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FillableLoaders/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polquintana.FillableLoaders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C1CF9E071B97857600DEA2EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FillableLoaders/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polquintana.FillableLoaders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1CF9DBE1B97843A00DEA2EB /* Build configuration list for PBXProject "FillableLoaders-Example" */ = {
+		C17B59161B9790A800717546 /* Build configuration list for PBXNativeTarget "FillableLoaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1CF9DDE1B97843A00DEA2EB /* Debug */,
-				C1CF9DDF1B97843A00DEA2EB /* Release */,
+				C17B59171B9790A800717546 /* Debug */,
+				C17B59181B9790A800717546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1C7488E1B978FA5001948ED /* Build configuration list for PBXProject "FillableLoaders-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C748B01B978FA5001948ED /* Debug */,
+				C1C748B11B978FA5001948ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1CF9DE01B97843A00DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders-Example" */ = {
+		C1C748B21B978FA5001948ED /* Build configuration list for PBXNativeTarget "FillableLoaders-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1CF9DE11B97843A00DEA2EB /* Debug */,
-				C1CF9DE21B97843A00DEA2EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C1CF9DE31B97843A00DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders-ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C1CF9DE41B97843A00DEA2EB /* Debug */,
-				C1CF9DE51B97843A00DEA2EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C1CF9E081B97857600DEA2EB /* Build configuration list for PBXNativeTarget "FillableLoaders" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C1CF9E061B97857600DEA2EB /* Debug */,
-				C1CF9E071B97857600DEA2EB /* Release */,
+				C1C748B31B978FA5001948ED /* Debug */,
+				C1C748B41B978FA5001948ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C1CF9DBB1B97843A00DEA2EB /* Project object */;
+	rootObject = C1C7488B1B978FA5001948ED /* Project object */;
 }
