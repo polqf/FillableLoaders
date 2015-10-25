@@ -129,8 +129,8 @@ public class FillableLoader: UIView {
     
     :returns: The loader that's already being showed
     */
-    public static func showLoaderWithPath(path: CGPath) -> Self {
-        let loader = createLoaderWithPath(path: path)
+    public static func showLoaderWithPath(path: CGPath, onView: UIView? = nil) -> Self {
+        let loader = createLoaderWithPath(path: path, onView: onView)
         loader.showLoader()
         return loader
     }
@@ -141,8 +141,8 @@ public class FillableLoader: UIView {
     
     :returns: The loader that's already being showed
     */
-    public static func showProgressBasedLoaderWithPath(path: CGPath) -> Self {
-        let loader = createProgressBasedLoaderWithPath(path: path)
+    public static func showProgressBasedLoaderWithPath(path: CGPath, onView: UIView? = nil) -> Self {
+    let loader = createProgressBasedLoaderWithPath(path: path, onView: onView)
         loader.showLoader()
         return loader
     }
@@ -154,9 +154,9 @@ public class FillableLoader: UIView {
     
     :returns: The created loader
     */
-    public static func createLoaderWithPath(path thePath: CGPath) -> Self {
+    public static func createLoaderWithPath(path thePath: CGPath, onView: UIView? = nil) -> Self {
         let loader = self.init()
-        loader.initialSetup()
+        loader.initialSetup(onView)
         loader.addPath(thePath)
         return loader
     }
@@ -168,20 +168,24 @@ public class FillableLoader: UIView {
     
     :returns: The created loader
     */
-    public static func createProgressBasedLoaderWithPath(path thePath: CGPath) -> Self {
+    public static func createProgressBasedLoaderWithPath(path thePath: CGPath, onView: UIView? = nil) -> Self {
         let loader = self.init()
         loader.progressBased = true
-        loader.initialSetup()
+        loader.initialSetup(onView)
         loader.addPath(thePath)
         return loader
     }
     
-    internal func initialSetup() {
+    internal func initialSetup(view: UIView? = nil) {
         //Setting up frame
-        let window = UIApplication.sharedApplication().delegate?.window!
-        self.frame = window!.frame
-        self.center = CGPointMake(CGRectGetMidX(window!.bounds), CGRectGetMidY(window!.bounds))
-        window!.addSubview(self)
+        var window = view
+        if view == nil {
+            window = UIApplication.sharedApplication().delegate?.window!
+        }
+        guard let w = window else { return }
+        self.frame = w.frame
+        self.center = CGPointMake(CGRectGetMidX(w.bounds), CGRectGetMidY(w.bounds))
+        w.addSubview(self)
         
         //Initial Values
         defaultValues()
@@ -335,10 +339,10 @@ public class FillableLoader: UIView {
     //MARK: Abstract methods
     
     internal func generateLoader() {
-        preconditionFailure("This method must be overridden")
+        preconditionFailure("Call this method from the desired FillableLoader type class")
     }
     
     internal func startAnimating() {
-        preconditionFailure("This method must be overridden")
+        preconditionFailure("Call this method from the desired FillableLoader type class")
     }
 }
