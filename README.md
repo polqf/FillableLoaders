@@ -46,7 +46,7 @@ Rounded
 ###Changelog:
 
 - __1.2.1__ (25 Oct 2015)
-	- Added posibility to add loader to a desired UIView
+	- Added the possibility to add a loader to a desired UIView
 	- Updated to Swift 2.0 
 - __1.1.1__ (2 Sep 2015)
 	- Added Carthage Support
