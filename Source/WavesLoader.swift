@@ -24,10 +24,10 @@ public class WavesLoader: FillableLoader {
     // MARK: Animate
     
     internal override func startAnimating() {
-        if !animate { return }
+        guard animate else { return }
         if swing { startswinging() }
         startWaving()
-        startMoving(true)
+        startMoving(up: true)
     }
     
     internal func startWaving() {
@@ -99,13 +99,12 @@ public class WavesLoader: FillableLoader {
     //MARK: Animations Delegate
     
     override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        if !animate { return }
-        let key = anim.valueForKey("animation") as! String
+        guard animate, let key = anim.valueForKey("animation") as? String else { return }
         if key == "up" {
-            startMoving(false)
+            startMoving(up: false)
         }
-        if key == "down" {
-            startMoving(true)
+        else if key == "down" {
+            startMoving(up: true)
         }
         if key == "shape" {
             startWaving()

@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.1.1-red.svg)
+![](https://img.shields.io/badge/version-1.2.1-red.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
@@ -45,6 +45,9 @@ Rounded
 
 ###Changelog:
 
+- __1.2.1__ (25 Oct 2015)
+	- Added posibility to add loader to a desired UIView
+	- Updated to Swift 2.0 
 - __1.1.1__ (2 Sep 2015)
 	- Added Carthage Support
 	- Added animation when hidding loader 
@@ -95,6 +98,15 @@ Sample code:
         ...
         loader.showLoader()
 ```
+
+####- Showing loader in desired view:
+All the methods wave the variant version where you can pass it the view in which you want to add the loader:
+
+- `showProgressBasedLoaderWithPath(path:onView:)`
+- `createProgressBasedLoaderWithPath(path:onView:)`
+- `showLoaderWithPath(path:onView:)`
+- `createLoaderWithPath(path:onView:)`
+
 
 #### - Deletion:
 Just call the method `removeLoader()` and the loader will disappear and will also be removed from its superview.
@@ -215,7 +227,7 @@ A feature that I `LOVE` from PaintCode is that you can import an .svg file, and 
 That's how I did the Github and Twitter logos, for example.
 
 ### Technical details:
-- Swift 1.2
+- Swift 2.0
 - Animations using CAKeyFrameAnimation
 
 ###Licenses

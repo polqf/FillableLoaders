@@ -24,14 +24,13 @@ public class PlainLoader: FillableLoader {
     // MARK: Animate
     
     internal override func startAnimating() {
-        if !animate { return }
-        startMoving(true)
+        guard animate else { return }
+        startMoving(up: true)
     }
     
     internal func shapePath() -> CGMutablePath {
         let width = loaderView.frame.width
         let height = loaderView.frame.height
-        
         let path = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil, 0, height/2)
         CGPathAddLineToPoint(path, nil, width + 100, height/2)
@@ -45,13 +44,12 @@ public class PlainLoader: FillableLoader {
     //MARK: Animations Delegate
     
     override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        if !animate { return }
-        let key = anim.valueForKey("animation") as! String
+        guard animate, let key = anim.valueForKey("animation") as? String else { return }
         if key == "up" {
-            startMoving(false)
+            startMoving(up: false)
         }
-        if key == "down" {
-            startMoving(true)
+        else if key == "down" {
+            startMoving(up: true)
         }
     }
 }

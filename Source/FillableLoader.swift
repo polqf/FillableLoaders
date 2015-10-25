@@ -179,8 +179,8 @@ public class FillableLoader: UIView {
     internal func initialSetup(view: UIView? = nil) {
         //Setting up frame
         var window = view
-        if view == nil {
-            window = UIApplication.sharedApplication().delegate?.window!
+        if view == nil, let mainWindow = UIApplication.sharedApplication().delegate?.window {
+            window = mainWindow
         }
         guard let w = window else { return }
         self.frame = w.frame
@@ -239,7 +239,7 @@ public class FillableLoader: UIView {
             self.removeFromSuperview()
         }
         
-        if !animated {
+        guard animated else {
             completion()
             return
         }
@@ -296,7 +296,7 @@ public class FillableLoader: UIView {
     
     //MARK: Animations
     
-    internal func startMoving(up: Bool) {
+    internal func startMoving(up up: Bool) {
         if (progressBased) { return }
         let key = up ? "up" : "down"
         let moveAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "position.y")
