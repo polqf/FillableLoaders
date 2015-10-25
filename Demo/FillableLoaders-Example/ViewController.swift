@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     }
     
     func presentFillableLoaderAtIndex(index: Int) {
-        loader.removeLoader(animated: false)
+        loader.removeLoader(false)
         switch index {
         case 1:
             loader = PlainLoader.showLoaderWithPath(path())

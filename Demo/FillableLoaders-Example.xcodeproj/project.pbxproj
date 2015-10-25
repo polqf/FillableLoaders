@@ -207,6 +207,7 @@
 		C1C7488B1B978FA5001948ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Pol Quintana";
 				TargetAttributes = {
@@ -467,6 +468,7 @@
 				C17B59181B9790A800717546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C7488E1B978FA5001948ED /* Build configuration list for PBXProject "FillableLoaders-Example" */ = {
 			isa = XCConfigurationList;
