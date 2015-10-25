@@ -80,23 +80,23 @@ If you want to create the loader, and not show it at the same moment, you can us
 Sample code:
 
 ``` swift
-		//PROGRESS BASED:
+//PROGRESS BASED:
 		
-		var loader = WavesLoader.createProgressBasedLoaderWithPath(path)
-        loader.loaderColor = UIColor.redColor()
+var loader = WavesLoader.createProgressBasedLoaderWithPath(path)
+loader.loaderColor = UIColor.redColor()
         ...
-        //Do other stuff
+//Do other stuff
         ...
-        loader.showLoader()
+loader.showLoader()
 		
-		//BASIC
+//BASIC
 
-        var loader = WavesLoader.createLoaderWithPath(path)
-        loader.loaderColor = UIColor.redColor()
+var loader = WavesLoader.createLoaderWithPath(path)
+loader.loaderColor = UIColor.redColor()
         ...
-        //Do other stuff
+//Do other stuff
         ...
-        loader.showLoader()
+loader.showLoader()
 ```
 
 ####- Showing loader in desired view:
@@ -114,7 +114,7 @@ Just call the method `removeLoader()` and the loader will disappear and will als
 Sample code:
 
 ``` swift
-        loader.removeLoader()
+loader.removeLoader()
 ```
 
 ### Customization:
@@ -159,12 +159,12 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>1.0.1'
+pod 'FillableLoaders', '~>1.2.1'
 ```
 ####• Carthage
 
 ```
-github "poolqf/FillableLoaders"
+github "poolqf/FillableLoaders" ~> "1.2.1"
 ```
 
 ###How to create my own CGPath?
@@ -176,13 +176,13 @@ github "poolqf/FillableLoaders"
 ####• Manually
 
 ``` swift
-        let path = CGPathCreateMutable()
-        CGPathMoveToPoint(path, nil, 0, height/2)
-        CGPathAddLineToPoint(path, nil, width + 100, height/2)
-        CGPathAddLineToPoint(path, nil, width + 100, height*2)
-        CGPathAddLineToPoint(path, nil, 0, height*2)
-        CGPathCloseSubpath(path)
-        return path
+let path = CGPathCreateMutable()
+CGPathMoveToPoint(path, nil, 0, height/2)
+CGPathAddLineToPoint(path, nil, width + 100, height/2)
+CGPathAddLineToPoint(path, nil, width + 100, height*2)
+CGPathAddLineToPoint(path, nil, 0, height*2)
+CGPathCloseSubpath(path)
+return path
 ```
 
 ####• PaintCode
