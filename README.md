@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.2.1-red.svg)
+![](https://img.shields.io/badge/version-1.2.2-red.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
@@ -45,6 +45,8 @@ Rounded
 
 ###Changelog:
 
+- __1.2.2__ (27 Oct 2015)
+	- Precompiled framework using Xcode 7.1
 - __1.2.1__ (25 Oct 2015)
 	- Added the possibility to add a loader to a desired UIView
 	- Updated to Swift 2.0 
@@ -227,7 +229,7 @@ A feature that I `LOVE` from PaintCode is that you can import an .svg file, and 
 That's how I did the Github and Twitter logos, for example.
 
 ### Technical details:
-- Swift 2.0
+- Swift 2.1
 - Animations using CAKeyFrameAnimation
 
 ###Licenses
