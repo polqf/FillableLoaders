@@ -161,12 +161,12 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>1.2.1'
+pod 'FillableLoaders', '~>1.2.2'
 ```
 ####• Carthage
 
 ```
-github "poolqf/FillableLoaders" ~> "1.2.1"
+github "poolqf/FillableLoaders" ~> "1.2.2"
 ```
 
 ###How to create my own CGPath?
