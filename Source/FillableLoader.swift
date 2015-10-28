@@ -225,6 +225,7 @@ public class FillableLoader: UIView {
     Atention: do not use this method after creating a loader with `showLoaderWithPath(path:)`
     */
     public func showLoader() {
+        alpha = 1.0
         hidden = false
         animate = true
         generateLoader()
