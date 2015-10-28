@@ -17,6 +17,7 @@ public class FillableLoader: UIView {
     internal var extraHeight: CGFloat = 0
     internal var oldYPoint: CGFloat = 0
     internal let mainBgColor = UIColor(white: 0.2, alpha: 0.6)
+    internal weak var loaderSuperview: UIView?
     
     // MARK: Public Variables
     
@@ -186,6 +187,7 @@ public class FillableLoader: UIView {
         self.frame = w.frame
         self.center = CGPointMake(CGRectGetMidX(w.bounds), CGRectGetMidY(w.bounds))
         w.addSubview(self)
+        loaderSuperview = w
         
         //Initial Values
         defaultValues()
@@ -227,6 +229,9 @@ public class FillableLoader: UIView {
         animate = true
         generateLoader()
         startAnimating()
+        if superview == nil {
+            loaderSuperview?.addSubview(self)
+        }
     }
     
     /**
@@ -237,6 +242,8 @@ public class FillableLoader: UIView {
             self.hidden = false
             self.animate = false
             self.removeFromSuperview()
+            self.layer.removeAllAnimations()
+            self.shapeLayer.removeAllAnimations()
         }
         
         guard animated else {
