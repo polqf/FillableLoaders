@@ -211,7 +211,7 @@ public class FillableLoader: UIView {
         let height = bounds.height
         let width = bounds.width
         assert(height <= loaderView.frame.height, "The height(\(height)) of the path has to fit the dimensions (Height: \(loaderView.frame.height) Width: \(frame.width))")
-        assert(width <= loaderView.frame.height, "The width(\(width)) of the path has to fit the dimensions (Height: \(loaderView.frame.width) Width: \(frame.width))")
+        assert(width <= loaderView.frame.width, "The width(\(width)) of the path has to fit the dimensions (Height: \(loaderView.frame.width) Width: \(frame.width))")
         var transformation = CGAffineTransformMakeTranslation(-center.x - width/2 + loaderView.frame.width/2, -center.y - height/2 + loaderView.frame.height/2)
         path = CGPathCreateCopyByTransformingPath(thePath, &transformation)
     }
