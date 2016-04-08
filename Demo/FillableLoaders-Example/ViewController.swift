@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         segmentedControl.backgroundColor = UIColor.whiteColor()
         segmentedControl.tintColor = UIColor(white: 0.2, alpha: 1)
         segmentedControl.frame = CGRectMake(margin, height - margin - 40, width - margin*2, 40)
-        segmentedControl.addTarget(self, action: "segmentedControlTouch:", forControlEvents: .ValueChanged)
+        segmentedControl.addTarget(self, action: #selector(segmentedControlTouch), forControlEvents: .ValueChanged)
         window!.addSubview(segmentedControl)
         
         button.frame = CGRectMake(0, 0, 150, 35)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         button.setTitle("Change Logo", forState: .Normal)
         button.setTitleColor(UIColor.blackColor(), forState: .Normal)
         button.titleLabel?.font = UIFont.systemFontOfSize(14)
-        button.addTarget(self, action: "changeLogo", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(changeLogo), forControlEvents: .TouchUpInside)
         window!.addSubview(button)
     }
     
