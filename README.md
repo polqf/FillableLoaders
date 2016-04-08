@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.2.5-red.svg)
+![](https://img.shields.io/badge/version-1.2.6-red.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
@@ -44,6 +44,9 @@ Rounded
 </p>
 
 ###Changelog:
+- __1.2.6__ (8 Apr 2016)
+	- Fixing issue with width assert 
+	- Adapted to Swift 2.2
 - __1.2.5__ (11 Dec 2015)
 	- Precompiled framework using Xcode 7.2
 - __1.2.4__ (28 Oct 2015)
@@ -164,12 +167,12 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>1.2.5'
+pod 'FillableLoaders', '~>1.2.6'
 ```
 ####• Carthage
 
 ```
-github "poolqf/FillableLoaders" ~> "1.2.5"
+github "poolqf/FillableLoaders" ~> "1.2.6"
 ```
 
 ###How to create my own CGPath?
