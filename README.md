@@ -174,6 +174,9 @@ pod 'FillableLoaders', '~>1.2.6'
 ```
 github "poolqf/FillableLoaders" ~> "1.2.6"
 ```
+####• Manually
+
+To manually add `FillableLoaders` to your project you just need to copy the `Source` folder files.
 
 ###How to create my own CGPath?
 
