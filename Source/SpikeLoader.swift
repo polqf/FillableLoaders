@@ -59,7 +59,7 @@ public class SpikeLoader: FillableLoader {
     
     //MARK: Animations Delegate
     
-    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         guard animate, let key = anim.valueForKey("animation") as? String else { return }
         if key == "up" {
             startMoving(up: false)
