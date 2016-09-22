@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FillableLoader: UIView {
+public class FillableLoader: UIView, CAAnimationDelegate {
     internal var shapeLayer = CAShapeLayer()
     internal var strokeLayer = CAShapeLayer()
     internal var path: CGPath!
