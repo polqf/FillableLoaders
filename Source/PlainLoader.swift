@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class PlainLoader: FillableLoader {
+open class PlainLoader: FillableLoader {
     
     internal override func generateLoader() {
         layoutPath()
@@ -31,20 +31,21 @@ public class PlainLoader: FillableLoader {
     internal func shapePath() -> CGMutablePath {
         let width = loaderView.frame.width
         let height = loaderView.frame.height
-        let path = CGPathCreateMutable()
-        CGPathMoveToPoint(path, nil, 0, height/2)
-        CGPathAddLineToPoint(path, nil, width + 100, height/2)
-        CGPathAddLineToPoint(path, nil, width + 100, height*2)
-        CGPathAddLineToPoint(path, nil, 0, height*2)
-        CGPathCloseSubpath(path)
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: 0, y: height/2))
+        path.addLine(to: CGPoint(x: width + 100, y: height/2))
+        path.addLine(to: CGPoint(x: width + 100, y: height*2))
+        path.addLine(to: CGPoint(x: 0, y: height*2))
+        path.closeSubpath()
         return path
     }
-    
-    
-    //MARK: Animations Delegate
-    
-    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        guard animate, let key = anim.valueForKey("animation") as? String else { return }
+
+}
+
+extension PlainLoader {
+
+    open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        guard animate, let key = anim.value(forKey: "animation") as? String else { return }
         if key == "up" {
             startMoving(up: false)
         }
