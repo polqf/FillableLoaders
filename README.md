@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-swift-blue.svg)
-![](https://img.shields.io/badge/version-1.2.6-red.svg)
+![](https://img.shields.io/badge/version-1.3.0-red.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
@@ -44,6 +44,8 @@ Rounded
 </p>
 
 ###Changelog:
+- __1.3.0__ (24 Sep 2016)
+	- Swift 3.0
 - __1.2.6__ (8 Apr 2016)
 	- Fixing issue with width assert 
 	- Adapted to Swift 2.2
@@ -167,12 +169,12 @@ Height of the spike
 ```
 use_frameworks!
 
-pod 'FillableLoaders', '~>1.2.6'
+pod 'FillableLoaders', '~>1.3.0'
 ```
 ####• Carthage
 
 ```
-github "poolqf/FillableLoaders" ~> "1.2.6"
+github "poolqf/FillableLoaders" ~> "1.3.0"
 ```
 
 ###How to create my own CGPath?
@@ -235,7 +237,7 @@ A feature that I `LOVE` from PaintCode is that you can import an .svg file, and 
 That's how I did the Github and Twitter logos, for example.
 
 ### Technical details:
-- Swift 2.1
+- Swift 3.0
 - Animations using CAKeyFrameAnimation
 
 ###Licenses
