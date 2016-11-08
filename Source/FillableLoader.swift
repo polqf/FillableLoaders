@@ -53,6 +53,7 @@ open class FillableLoader: UIView, CAAnimationDelegate {
             super.backgroundColor = _mainBgColor
         }
     }
+
     
     /// Loader view background color (Default: Clear)
     override open var backgroundColor: UIColor? {
