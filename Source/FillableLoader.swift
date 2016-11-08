@@ -16,7 +16,6 @@ open class FillableLoader: UIView, CAAnimationDelegate {
     internal var animate: Bool = false
     internal var extraHeight: CGFloat = 0
     internal var oldYPoint: CGFloat = 0
-    internal let mainBgColor = UIColor(white: 0.2, alpha: 0.6)
     internal weak var loaderSuperview: UIView?
 
     // MARK: Public Variables
@@ -44,6 +43,16 @@ open class FillableLoader: UIView, CAAnimationDelegate {
     internal var _loaderAlpha: CGFloat = 1.0
     internal var _cornerRadius: CGFloat = 0.0
     internal var _progress: CGFloat = 0.0
+    internal var _mainBgColor: UIColor = UIColor(white: 0.2, alpha: 0.6)
+
+    /// Background color of the view holding the loader
+    open var mainBgColor: UIColor {
+        get { return _mainBgColor }
+        set {
+            _mainBgColor = newValue
+            super.backgroundColor = _mainBgColor
+        }
+    }
 
     /// Loader view background color (Default: Clear)
     override open var backgroundColor: UIColor? {
