@@ -3,7 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 # FillableLoaders
 
-####Completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
+#### Completely customizable progress based loaders drawn using custom `CGPath`s written in Swift
 
 <p align="center">
 <img src="Images/waves.gif" height="120px"/>
@@ -34,7 +34,7 @@ Rounded
 </p>
 
 
-###Demo:
+### Demo:
 <p align="center">
 <img src="Images/progress.gif" height="200px"/>
 </p>
@@ -43,7 +43,7 @@ Rounded
 <img src="Images/demo.png" height="300px"/>
 </p>
 
-###Changelog:
+### Changelog:
 - __1.3.0__ (24 Sep 2016)
 	- Swift 3.0
 - __1.2.6__ (8 Apr 2016)
@@ -69,7 +69,7 @@ Rounded
 - __0.0.2 Initial Release__ (3 Aug 2015)
 
 
-###Quick Start:
+### Quick Start:
 #### - Progress based behaviour
 Therea are only 2 necessary things to make the progress based loader work:
 
@@ -109,7 +109,7 @@ loader.loaderColor = UIColor.redColor()
 loader.showLoader()
 ```
 
-####- Showing loader in desired view:
+#### - Showing loader in desired view:
 All the methods wave the variant version where you can pass it the view in which you want to add the loader:
 
 - `showProgressBasedLoaderWithPath(path:onView:)`
@@ -157,36 +157,36 @@ Height of the loader view
 Bool to indicate if the loader has to swing when going up (small rotation, not available for the Plain loader)
 
 
-#####Extra property for `Spikes` and `Rounded` loaders:
+##### Extra property for `Spikes` and `Rounded` loaders:
 
 - __-spikeHeight__: CGFloat		
 Height of the spike
 
 
-###Installation:
-####• CocoaPods
+### Installation:
+#### • CocoaPods
 
 ```
 use_frameworks!
 
 pod 'FillableLoaders', '~>1.3.0'
 ```
-####• Carthage
+#### • Carthage
 
 ```
 github "poolqf/FillableLoaders" ~> "1.3.0"
 ```
-####• Manually
+#### • Manually
 
 To manually add `FillableLoaders` to your project you just need to copy the `Source` folder files.
 
-###How to create my own CGPath?
+### How to create my own CGPath?
 
 ###### :warning: The CGPath bounds cannot exceed the bounds of the loaderView:
 - Width: Screen width
 - Height: rectSize property
 
-####• Manually
+#### • Manually
 
 ``` swift
 let path = CGPathCreateMutable()
@@ -198,7 +198,7 @@ CGPathCloseSubpath(path)
 return path
 ```
 
-####• PaintCode
+#### • PaintCode
 
 __[PaintCode](http://www.paintcodeapp.com)__ is a realy powerful Mac app that can do a lot of things. 
 You can just draw things, and it will __automagically__ create the code for you
@@ -233,7 +233,7 @@ let myPath = starPath.CGPath
 var myLoader = WavesLoader.showProgressBasedLoaderWithPath(myPath)
 ```
 
-####• SVG + PaintCode
+#### • SVG + PaintCode
 
 A feature that I `LOVE` from PaintCode is that you can import an .svg file, and it is going to create the code to create its BezierPath. Completely awesome.
 
@@ -243,7 +243,7 @@ That's how I did the Github and Twitter logos, for example.
 - Swift 3.0
 - Animations using CAKeyFrameAnimation
 
-###Licenses
+### Licenses
 All source code is licensed under the MIT License.
 
 If you use it, i'll be happy to know about it.
